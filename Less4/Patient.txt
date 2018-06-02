@@ -1,0 +1,42 @@
+package main50;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Андрей
+ */
+class Patient {
+    
+    String Surname;
+    int age;
+    String diagnostic;
+    
+    Patient(String nameSername, int age,String diagnostic){
+        this.Surname = nameSername;
+        this.age = age;
+        this.diagnostic = diagnostic;
+    }
+
+    
+
+    public static void inputmethod(String[] a) {
+        Scanner in = new Scanner(System.in);
+        for (int i = 0; i < a.length; i++) {
+            a[i] = in.nextLine();}
+    }
+       
+ public static void Serch(String[] a) {
+        Scanner in = new Scanner(System.in);
+           String b = in.nextLine();
+         for(int i=0; i < a.length; i++){
+         if(a[i].equals(b)){
+             System.out.println(a[i]+ "- Возраст =" + a[i+1]);
+             }
+   // void addPatient(Patient){
+     //        int index;
+       //      patient[index]=patient;
+         //    index++;
+         }
+}  
+}       

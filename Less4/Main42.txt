@@ -1,0 +1,12 @@
+public class Main42 {
+
+    public static void main(String[] args) {
+        int N = 365;
+        System.out.println("Количество страниц =" +Main32.guantityPages(N));
+    }
+
+    public static int guantityPages(int N) {
+        int np = (N / 10) + 1;
+        return np;
+    }
+}
